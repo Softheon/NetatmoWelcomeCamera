@@ -11,7 +11,8 @@ namespace SaveHalbe.Core.Model
         public string faceId; //\":\"e939ef1c-2d02-489f-8669-6fe62feae408\",
         public FaceRectangle faceRectangle;
         public FaceAttributes faceAttributes;
-        public string glasses;   
+        public string glasses;
+        public HeadPose headPose;  
     }
 
     public class FaceRectangle
@@ -28,6 +29,22 @@ namespace SaveHalbe.Core.Model
         public object age;
         public string gender;
         public string smile;
+        public FacialHair facialHair;
+
       //  "faceAttributes\":{\"age\":53.3}}
+    }
+
+    public class FacialHair
+    {
+        public object mustache;
+        public object beard;
+        public object sideburns;
+    }
+
+    public class HeadPose
+    {
+        public object roll;
+        public object yea;
+        public object pitch;
     }
 }

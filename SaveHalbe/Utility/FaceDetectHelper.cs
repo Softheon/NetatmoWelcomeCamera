@@ -34,7 +34,7 @@ namespace SaveHalbe.Utility
                 // Request parameters
                 queryString["returnFaceId"] = "true";
                 queryString["returnFaceLandmarks"] = "false";
-                queryString["returnFaceAttributes"] = "age,gender,smile";
+                queryString["returnFaceAttributes"] = "age,gender,smile,facialHair,glasses,headPose";
 
                 var uri = Url.faceDetectEndPoint + queryString;
 

@@ -58,7 +58,7 @@ namespace SaveHalbe.Adapters
             // set view properties to reflect data for the given row
             var imageBitmap = ImageHelper.GetPicture(item.Face.Id, item.Face.Key);
 
-            convertView.FindViewById<TextView>(Resource.Id.personNameTextView).Text = string.IsNullOrWhiteSpace(item.Pseudo) ? "Unknwon" : item.Pseudo;
+            convertView.FindViewById<TextView>(Resource.Id.personNameTextView).Text = string.IsNullOrWhiteSpace(item.Pseudo) ? "Unknown" : item.Pseudo;
             convertView.FindViewById<ImageView>(Resource.Id.personImageView).SetImageBitmap(imageBitmap);
 
             return convertView;
